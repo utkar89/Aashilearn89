@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - College Project</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+      color: #333;
+    }
+
+    /* Header Styles */
+    header {
+      background: linear-gradient(135deg, #ff6f61, #ffcc00);
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      animation: headerAnimation 5s infinite alternate;
+    }
+
+    @keyframes headerAnimation {
+      0% { background: linear-gradient(135deg, #ff6f61, #ffcc00); }
+      100% { background: linear-gradient(135deg, #ffcc00, #ff6f61); }
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo-container img {
+      height: 40px; /* Adjust the height of the logo */
+      width: auto;
+    }
+
+    .logo-container .name {
+      font-size: 24px;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 18px;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffcc00;
+    }
+
+    .auth-links {
+      display: flex;
+      gap: 15px;
+    }
+
+    .auth-links a {
+      background: #fff;
+      color: #ff6f61;
+      padding: 10px 20px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-size: 16px;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    .auth-links a:hover {
+      background: #ff6f61;
+      color: #fff;
+    }
+
+    /* Contact Form Styles */
+    .contact-container {
+      padding: 40px;
+      text-align: center;
+    }
+
+    .contact-container h1 {
+      font-size: 36px;
+      color: #ff6f61;
+      animation: textAnimation 3s infinite alternate;
+    }
+
+    @keyframes textAnimation {
+      0% { color: #ff6f61; }
+      100% { color: #ffcc00; }
+    }
+
+    .contact-container form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .contact-container input, .contact-container textarea {
+      width: 300px;
+      padding: 10px;
+      border: none;
+      border-radius: 25px;
+      outline: none;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: box-shadow 0.3s;
+    }
+
+    .contact-container input:focus, .contact-container textarea:focus {
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    .contact-container button {
+      padding: 10px 20px;
+      background: #ff6f61;
+      color: #fff;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .contact-container button:hover {
+      background: #ffcc00;
+    }
+
+    /* Footer Styles */
+    footer {
+      background: linear-gradient(135deg, #ff6f61, #ffcc00);
+      padding: 20px;
+      text-align: center;
+      color: #fff;
+      animation: footerAnimation 5s infinite alternate;
+    }
+
+    @keyframes footerAnimation {
+      0% { background: linear-gradient(135deg, #ff6f61, #ffcc00); }
+      100% { background: linear-gradient(135deg, #ffcc00, #ff6f61); }
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 16px;
+    }
+    #logo{
+      width: 70px; /* Set logo width */
+    height: 70px; /* Set height same as width for circle shape */
+    border-radius: 50%; /* Makes the image a circle */
+    object-fit: cover; /* Ensures the image covers the area of the circle */
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo-container">
+      <img src="logo.png.png" alt="Logo"id="logo"> <!-- Replace with your logo image -->
+      <div class="name">learn</div> <!-- Replace with your project name -->
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+    <div class="auth-links">
+      <a href="login.html">Login</a>
+      <a href="signup.html">Sign Up</a>
+    </div>
+  </header>
+
+  <!-- Body -->
+  <div class="contact-container">
+    <h1>Contact Us</h1>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2023 College Project. All rights reserved.</p>
+  </footer>
+</body>
+</html>
